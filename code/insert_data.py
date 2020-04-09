@@ -27,21 +27,23 @@ def connect():
 
         # Insert articles
         for i in range(len(articles)):
-            cursor.execute(f"INSERT INTO ARTICLE (Date_published, Author, Title, Body) VALUES ('{articles[i][0]}', '{articles[i][1]}', '{articles[i][2]}', '{articles[i][3]}');")
+            cur.execute(f"INSERT INTO ARTICLE (Date_published, Author, Title, Body) VALUES ('{articles[i][0]}', '{articles[i][1]}', '{articles[i][2]}', '{articles[i][3]}');")
 
         # Insert tag_categories
         for i in range(len(tag_categories)):
-            cursor.execute(f"INSERT INTO TAG_CATEGORY (Category_name) VALUES ('{tag_categories[i]}');")
+            cur.execute(f"INSERT INTO TAG_CATEGORY (Category_name) VALUES ('{tag_categories[i]}');")
 
         # Insert tags
         for i in range(len(tags)):
-            cursor.execute(f"INSERT INTO TAG (Tag_name, Category_name) VALUES ('{tags[i][0]}', '{tags[i][1]}');")
+            cur.execute(f"INSERT INTO TAG (Tag_name, Category_name) VALUES ('{tags[i][0]}', '{tags[i][1]}');")
 
         # Insert classified_as
         for i in range(len(classified_as)):
-            cursor.execute(f"INSERT INTO CLASSIFIED_AS (Article_ID, Tag_name) VALUES({classified_as[i][0]+1}, '{classified_as[i][1]}');")
+            cur.execute(f"INSERT INTO CLASSIFIED_AS (Article_ID, Tag_name) VALUES({classified_as[i][0]+1}, '{classified_as[i][1]}');")
 
         conn.commit()
+
+        print("Insertions completed successfully!")
         # close the communication with the PostgreSQL
         cur.close()
     except (Exception, psycopg2.DatabaseError) as error:
