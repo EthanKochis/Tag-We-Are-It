@@ -56,7 +56,7 @@ classified_as = [
     (3, 'wind turbines'),
     (4, 'gardens'),
     (4, 'middle school'),
-    (5, 'evironmental politics'),
+    (5, 'environmental politics'),
     (6, 'green machinery'),
     (6, 'camden'),
     (7, 'packaging'),
