@@ -1,12 +1,3 @@
-# Format for ARTICLE
-# [
-#    [ Date_published, Author, Title, Body ],
-#    [ Date_published, Author, Title, Body ],
-#    ...
-# ]
-
-
-
 # TAG_CATEGORY
 tag_categories = [
     'ecology',
@@ -49,6 +40,8 @@ tags = [
 #    [ Article index, tag name ],
 #    ...
 # ]
+# Note that sense SERIAL PRIMARY KEY starts at 1
+#   1 is automatically added to the Article_ID before insertion in insert_data.py
 classified_as = [
     (0, 'butterfly'),
     (1, 'gardens'),
@@ -663,6 +656,14 @@ This story was produced in collaboration with the New Jersey Sustainability Repo
 
     ''',
 ]
+
+
+# Format for ARTICLE
+# [
+#    [ Date_published, Author, Title, Body ],
+#    [ Date_published, Author, Title, Body ],
+#    ...
+# ]
 
 # ARTICLE
 articles = [
