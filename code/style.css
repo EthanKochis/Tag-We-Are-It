@@ -9,6 +9,7 @@ body {
   font-size: 20px;
   border-radius: 5px;
   background-color: #3f72af;
+  display: inline-block;
 }
 
 .tag:hover, .category:hover {
