@@ -72,7 +72,7 @@ def all_tags():
 def articles(tag=None):
   if conn is None:
     connect()
-  cur.execute(f"SELECT Title FROM ARTICLE NATURAL JOIN CLASSIFIED_AS WHERE Tag_name='{tag}'")
+  cur.execute(f"SELECT Title, Author FROM ARTICLE NATURAL JOIN CLASSIFIED_AS WHERE Tag_name='{tag}'")
   return json.dumps(cur.fetchall())
   #return json.dumps(['tarticle1' + tag, 'tarticle2' + tag, 'tarticle3' + tag])
 
