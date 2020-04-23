@@ -24,6 +24,12 @@ li {
 
 .tag-container {
   margin-top: 12px;
+  text-align: center;
+}
+
+.article-container {
+  margin-top: 12px;
+  text-align: center;
 }
 
 .tag, .category {
