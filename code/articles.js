@@ -31,4 +31,9 @@ function display_article(article) {
 }
 
 let tag = window.localStorage.getItem('tag');
+
+// Adding tag title
+let title = document.getElementById('title-article');
+title.innerHTML = 'all articles for tag: ' + tag;
+
 get_articles(tag);

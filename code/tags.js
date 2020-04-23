@@ -30,4 +30,9 @@ function display_tag(tag) {
 }
 
 let category = window.localStorage.getItem('category');
+
+// Adding category title
+let title = document.getElementById('title-tag');
+title.innerHTML = 'all tags for: ' + category;
+
 get_tags(category);
