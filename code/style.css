@@ -17,15 +17,24 @@ li {
   list-style-type: none;
 }
 
+.category-container {
+  margin-top: 12px;
+  text-align: center;
+}
 
+.tag-container {
+  margin-top: 12px;
+}
 
 .tag, .category {
   margin: 3px;
   padding: 10px 15px;
-  font-size: 20px;
+  font-size: 1.2rem;
   border-radius: 5px;
   background-color: #3f72af;
   display: inline-block;
+  font-family: "Helvetica Neue";
+
 }
 
 .tag:hover, .category:hover {
@@ -36,4 +45,11 @@ li {
 .home-title {
   font-family: 'Pacifico', cursive;
   font-size: 3rem;
+}
+
+.title {
+  margin-top: 5%;
+  font-family: "Helvetica Neue";
+  font-size: 2rem;
+  text-align: center;
 }
