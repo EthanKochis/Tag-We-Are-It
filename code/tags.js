@@ -29,4 +29,5 @@ function display_tag(tag) {
   tag_container.appendChild(t);
 }
 
-get_tags();
+let category = window.localStorage.getItem('category');
+get_tags(category);

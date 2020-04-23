@@ -30,4 +30,5 @@ function display_article(article) {
   article_container.appendChild(art);
 }
 
-get_articles();
+let tag = window.localStorage.getItem('tag');
+get_articles(tag);
