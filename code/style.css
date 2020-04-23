@@ -66,6 +66,7 @@ li {
   font-size: 1.2rem;
   border-radius: 5px;
   font-family: "Helvetica Neue";
+  text-align: left;
 }
 
 .article div:first-child {
