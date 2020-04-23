@@ -3,6 +3,22 @@ body {
   color: #f9f7f7;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #dbe2ef;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
 .tag, .category {
   margin: 3px;
   padding: 10px 15px;
@@ -16,6 +32,7 @@ body {
   opacity: 0.8;
 }
 
-#home-title {
+.home-title {
   font-family: 'Pacifico', cursive;
+  font-size: 3rem;
 }
