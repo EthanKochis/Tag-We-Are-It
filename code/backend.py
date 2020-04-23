@@ -56,8 +56,7 @@ def tag_categories():
 def tags(category=None):
   if conn is None:
     connect()
-  # cur.execute(f"SELECT Tag_name FROM TAG WHERE Category_name={category}")
-  cur.execute("SELECT Tag_name FROM TAG WHERE Category_name=%s", category)
+  cur.execute(f"SELECT Tag_name FROM TAG WHERE Category_name='{category}'")
   return json.dumps(cur.fetchall())
   #return json.dumps(['ctag1' + category, 'ctag2' + category, 'ctag3' + category])
 
@@ -73,7 +72,7 @@ def all_tags():
 def articles(tag=None):
   if conn is None:
     connect()
-  cur.execute("SELECT Title FROM ARTICLE NATURAL JOIN CLASSIFIED_AS WHERE Tag_name=%s", tag)
+  cur.execute(f"SELECT Title FROM ARTICLE NATURAL JOIN CLASSIFIED_AS WHERE Tag_name='{tag}'")
   return json.dumps(cur.fetchall())
   #return json.dumps(['tarticle1' + tag, 'tarticle2' + tag, 'tarticle3' + tag])
 
