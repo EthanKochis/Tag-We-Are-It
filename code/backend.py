@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_cors import CORS
 import json
+from datetime import date
 import psycopg2
 from config import config
 
@@ -9,6 +10,12 @@ CORS(app)
 
 cur=None
 conn=None
+
+class DateJSON(json.JSONEncoder):
+
+  def default(self, thing):
+    if isinstance(thing, date): return str(thing)
+    return json.JSONEncoder.default(self, thing)
 
 def connect():
     global cur
@@ -84,3 +91,10 @@ def all_articles():
   return json.dumps(cur.fetchall())
   #return json.dumps(['article1', 'article2', 'article3'])
 # 127.0.0.1:5000/tag_categories
+
+@app.route('/article/<title>')
+def article(title=None):
+  if conn is None:
+    connect()
+  cur.execute("SELECT Title, Author, Date, Body from ARTICLE WHERE Title = '" + title + "'")
+  return json.dumps(cur.fetchall()[0], cls=DateJSON)
