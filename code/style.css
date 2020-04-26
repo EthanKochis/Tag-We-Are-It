@@ -48,11 +48,6 @@ li {
   opacity: 0.8;
 }
 
-.home-title {
-  font-family: 'Pacifico', cursive;
-  font-size: 3rem;
-}
-
 .title {
   margin-top: 5%;
   font-family: "Helvetica Neue";
@@ -77,4 +72,31 @@ li {
 
 .article div:not(:first-child) {
   color: lightgray;
+}
+
+.nav-bar-container {
+  position: relative;
+
+}
+
+.nav-links-top-right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+.home-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  margin-left: 5%;
+}
+
+.nav-links-top-right a {
+  font-size: 1.5rem;
+  border-left: solid 1px white;
+  padding: 0 10px;
+}
+.nav-links-top-right a:first-child{
+  border-left: none;
 }
