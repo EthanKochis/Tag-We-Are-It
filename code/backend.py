@@ -89,7 +89,7 @@ def articles(tag=None):
 def all_articles():
   if conn is None:
     connect()
-  cur.execute("SELECT Title from ARTICLE")
+  cur.execute("SELECT Title, Author FROM ARTICLE")
   return json.dumps(cur.fetchall())
   #return json.dumps(['article1', 'article2', 'article3'])
 # 127.0.0.1:5000/tag_categories

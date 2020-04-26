@@ -7,7 +7,7 @@ function get_articles(title=null) {
       display_article(article);
    }
   };
-  xhttp.open("GET", `http://127.0.0.1:5000/article/${title}`);
+  xhttp.open("GET", `http://127.0.0.1:5000/article/${title.replace("?", "%3F")}`);
   xhttp.send();
 }
 

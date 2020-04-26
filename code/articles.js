@@ -41,9 +41,15 @@ function display_article(article) {
 }
 
 let tag = window.localStorage.getItem('tag');
+if (tag === "null") tag = null;
 
 // Adding tag title
 let title = document.getElementById('title-article');
-title.innerHTML = 'all articles for tag: ' + tag;
+if (tag) {
+  title.innerHTML = 'all articles for tag: ' + tag;
+} else {
+  title.innerHTML = 'all articles';
+}
+
 
 get_articles(tag);

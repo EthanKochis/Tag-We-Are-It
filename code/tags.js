@@ -30,9 +30,14 @@ function display_tag(tag) {
 }
 
 let category = window.localStorage.getItem('category');
+if (category === "null") category = null;
 
 // Adding category title
 let title = document.getElementById('title-tag');
-title.innerHTML = 'all tags for: ' + category;
+if (category) {
+  title.innerHTML = 'all tags for: ' + category;
+} else {
+  title.innerHTML = 'all tags';
+}
 
 get_tags(category);

@@ -79,7 +79,6 @@ li {
   color: lightgray;
 }
 
-<<<<<<< HEAD
 .nav-bar-container {
   position: relative;
 
@@ -106,7 +105,7 @@ li {
 .nav-links-top-right a:first-child{
   border-left: none;
 }
-=======
+
 .article-cont {
   padding: 2rem;
 }
@@ -123,4 +122,3 @@ li {
 #article-title {
   color: #DBE2EF;
 }
->>>>>>> f3e363bac20cbf76395755945b07bbe1967bd731

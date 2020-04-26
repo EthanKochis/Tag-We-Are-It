@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <title>Tag You're It</title>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet"
+    <link href="style.css" rel="stylesheet"/>
 </head>
 
 <body>
+
+<script>
+    const allArticles = () => {
+        window.localStorage.setItem('tag', null);
+        window.location.href = "articles.html";
+    }
+    const allTags = () => {
+        window.localStorage.setItem('category', null);
+        window.location.href = "tags.html";
+    }
+</script>
+
 <div class="nav-bar-container">
         <a href="index.html" class="home-title">tag we're it</a>
     <div class="nav-links-top-right">
-        <a href="all-tag-categories.html" class="nav-links">all tag categories</a>
-        <a href="all-tags.html" class="nav-links">all tags</a>
-        <a href="all-articles.html" class="nav-links">all articles</a>
+        <a href="index.html" class="nav-links">all tag categories</a>
+        <a onclick="allTags()" href="javascript:void(0)" class="nav-links">all tags</a>
+        <a onclick="allArticles()" href="javascript:void(0)" class="nav-links">all articles</a>
     </div>
 </div>
 
