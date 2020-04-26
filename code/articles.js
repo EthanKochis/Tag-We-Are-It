@@ -29,6 +29,10 @@ function display_article(article) {
   art.classList.add('article');
   art.appendChild(title);
   art.appendChild(author);
+  art.addEventListener('click', () => {
+    window.localStorage.setItem('title', article[0]);
+    window.location.href = "article.html";
+  })
   // cat.addEventListener('click', () => {
   //   window.localStorage.setItem('article', article);
   //   window.location.href = "articles.html";

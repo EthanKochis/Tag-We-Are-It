@@ -65,6 +65,11 @@ li {
   margin-bottom: 0.8rem;
 }
 
+.article:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .article div:first-child {
   margin-bottom: 0.3rem;
   font-size: 1.5rem;
@@ -74,6 +79,7 @@ li {
   color: lightgray;
 }
 
+<<<<<<< HEAD
 .nav-bar-container {
   position: relative;
 
@@ -100,3 +106,21 @@ li {
 .nav-links-top-right a:first-child{
   border-left: none;
 }
+=======
+.article-cont {
+  padding: 2rem;
+}
+
+#article-date {
+  margin-left: 0.5rem;
+  color: lightgray;
+}
+
+#article-author {
+  font-size: 20px;
+}
+
+#article-title {
+  color: #DBE2EF;
+}
+>>>>>>> f3e363bac20cbf76395755945b07bbe1967bd731
