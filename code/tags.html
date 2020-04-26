@@ -8,10 +8,24 @@
 </head>
 
 <body>
+<script>
+    const allArticles = () => {
+        window.localStorage.setItem('tag', null);
+        window.location.href = "articles.html";
+    }
+    const allTags = () => {
+        window.localStorage.setItem('category', null);
+        window.location.href = "tags.html";
+    }
+</script>
+
 <div class="nav-bar-container">
-    <ui>
-        <li><a href="index.html" class="home-title">tag we're it</a></li>
-    </ui>
+    <a href="index.html" class="home-title">tag we're it</a>
+    <div class="nav-links-top-right">
+        <a href="index.html" class="nav-links">all tag categories</a>
+        <a onclick="allTags()" href="javascript:void(0)" class="nav-links">all tags</a>
+        <a onclick="allArticles()" href="javascript:void(0)" class="nav-links">all articles</a>
+    </div>
 </div>
 
 <h1 class="title" id="title-tag">all tags for: </h1>

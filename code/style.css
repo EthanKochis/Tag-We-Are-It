@@ -58,7 +58,7 @@ li {
 .article {
   padding: 0.5rem 0.8rem;
   background-color: #3f72af;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 5px;
   font-family: "Helvetica Neue";
   text-align: left;
@@ -72,7 +72,7 @@ li {
 
 .article div:first-child {
   margin-bottom: 0.3rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .article div:not(:first-child) {
