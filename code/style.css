@@ -78,3 +78,20 @@ li {
 .article div:not(:first-child) {
   color: lightgray;
 }
+
+.article-cont {
+  padding: 2rem;
+}
+
+#article-date {
+  margin-left: 0.5rem;
+  color: lightgray;
+}
+
+#article-author {
+  font-size: 20px;
+}
+
+#article-title {
+  color: #DBE2EF;
+}

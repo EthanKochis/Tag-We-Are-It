@@ -96,5 +96,5 @@ def all_articles():
 def article(title=None):
   if conn is None:
     connect()
-  cur.execute("SELECT Title, Author, Date, Body from ARTICLE WHERE Title = '" + title + "'")
+  cur.execute("SELECT Title, Author, Date_published, Body from ARTICLE WHERE Title = '" + title + "'")
   return json.dumps(cur.fetchall()[0], cls=DateJSON)
