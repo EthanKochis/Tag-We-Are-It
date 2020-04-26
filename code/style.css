@@ -70,6 +70,11 @@ li {
   margin-bottom: 0.8rem;
 }
 
+.article:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .article div:first-child {
   margin-bottom: 0.3rem;
   font-size: 1.5rem;
