@@ -1,3 +1,5 @@
+# Source code created by Tomer Singal, Derek Kneisel, Ethan Kochis, Alec Lopez
+# Interacts between front end and PostgreSQL database
 from flask import Flask
 from flask_cors import CORS
 import json
