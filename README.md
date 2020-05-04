@@ -17,10 +17,10 @@ Specfically, this system aims to augment the website [SRHub.org](www.srhub.org) 
 1. Install the following software on your system:
 
     * [PostgreSQL](https://www.postgresql.org/download/)
-    * Python 3
-    * Python library [psycopg2](https://www.psycopg.org/docs/install.html])
-    * Python library [flask](https://flask.palletsprojects.com/en/1.1.x/installation/)
-    * Python library [flask-cors](https://flask-cors.readthedocs.io/en/latest/)
+    * [Python 3](https://www.python.org/downloads/)
+    * [Python library psycopg2](https://www.psycopg.org/docs/install.html])
+    * [Python library flask](https://flask.palletsprojects.com/en/1.1.x/installation/)
+    * [Python library flask-cors](https://flask-cors.readthedocs.io/en/latest/)
 
 1. Now, edit the *code/database.ini* file to include the infromation needed to access your PostgreSQL database.  This file includes the username and password you want this program to access your database with.
     * **NOTE: Do not push this file back to the repository, as it will contain sensitive information.**
